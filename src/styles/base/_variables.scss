@@ -1,0 +1,59 @@
+$prefix: "vh-";
+
+// misc
+$input-height: 2rem;
+
+// fonts
+$font-regular: "Proxima Nova T Regular", Arial, sans-serif;
+$font-semibold: "Proxima Nova T Semibold", Arial, sans-serif;
+
+// colors
+$black: #464646;
+$green: #24a148;
+$orange: #FF984E;
+$icon-green: #198754;
+$green-light-2: #eaf6f1;
+
+$yellow: #FFC13C;
+$yellow-light-2: #fef1c3;
+
+$cyan: #0080A6;
+$cyan-dark: #005772;
+
+$red: #e31f4a;
+$red-light-2: #fbe1e9;
+
+$grey: #949494;
+$grey-light-3: #F5F5F5;
+$grey-light-2: #EBEBEB;
+$grey-light-1: #C6C6C6;
+$grey-shade-1: #707070;
+
+// viewports
+$small: 20rem;
+$medium: 42rem;
+$large: 66rem;
+$extra-large: 82rem;
+$super-large: 99rem;
+
+$breakpoints: (
+    xs: 0,
+    sm: $small,
+    md: $medium,
+    lg: $large,
+    xl: $extra-large,
+    xxl: $super-large,
+);
+
+// border radius
+$border-radius-small: 4px;
+
+// spacings
+$space1: 0.125rem; // 2px
+$space2: 0.25rem; // 4px
+$space3: 0.5rem; // 8px
+$space4: 0.75rem; // 12px
+$space5: 1rem; // 16px
+$space6: 1.5rem; // 24px
+$space7: 2rem; // 32px
+$space8: 2.5rem; // 40px,

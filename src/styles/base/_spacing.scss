@@ -1,0 +1,112 @@
+@import "../base/variables";
+
+@each $name, $width in $breakpoints {
+    $breakpoint-prefix: "-" + $name;
+    $values: (
+		"0": 0,
+        "1": $space1,
+        "2": $space2,
+        "3": $space3,
+        "4": $space4,
+        "5": $space5,
+        "6": $space6,
+        "7": $space7,
+        "8": $space8
+    );
+
+    @if $name == xs {
+        $breakpoint-prefix: "";
+    }
+
+    @media (min-width: #{$width}) {
+        @each $i, $size in $values {
+            .#{$prefix}p#{$breakpoint-prefix}-#{$i} {
+                padding: $size;
+            }
+
+            .#{$prefix}m#{$breakpoint-prefix}-#{$i} {
+                margin: $size;
+            }
+
+            .#{$prefix}h-list#{$breakpoint-prefix}-#{$i} {
+                > * {
+                    margin-right: $size;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .#{$prefix}h-list#{$breakpoint-prefix}-2px {
+            > * {
+                margin-right: 2px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @media (min-width: #{$width}) {
+        @each $i, $size in $values {
+            .#{$prefix}px#{$breakpoint-prefix}-#{$i} {
+                padding-left: $size;
+                padding-right: $size;
+            }
+
+            .#{$prefix}py#{$breakpoint-prefix}-#{$i} {
+                padding-top: $size;
+                padding-bottom: $size;
+            }
+
+            .#{$prefix}mx#{$breakpoint-prefix}-#{$i} {
+                margin-left: $size;
+                margin-right: $size;
+            }
+
+            .#{$prefix}my#{$breakpoint-prefix}-#{$i} {
+                margin-top: $size;
+                margin-bottom: $size;
+            }
+        }
+    }
+
+    @media (min-width: #{$width}) {
+        @each $i, $size in $values {
+            .#{$prefix}pt#{$breakpoint-prefix}-#{$i} {
+                padding-top: $size;
+            }
+
+            .#{$prefix}pr#{$breakpoint-prefix}-#{$i} {
+                padding-right: $size;
+            }
+
+            .#{$prefix}pb#{$breakpoint-prefix}-#{$i} {
+                padding-bottom: $size;
+            }
+
+            .#{$prefix}pl#{$breakpoint-prefix}-#{$i} {
+                padding-left: $size;
+            }
+
+            .#{$prefix}mt#{$breakpoint-prefix}-#{$i} {
+                margin-top: $size;
+            }
+
+            .#{$prefix}mr#{$breakpoint-prefix}-#{$i} {
+                margin-right: $size;
+            }
+
+            .#{$prefix}mb#{$breakpoint-prefix}-#{$i} {
+                margin-bottom: $size;
+            }
+
+            .#{$prefix}ml#{$breakpoint-prefix}-#{$i} {
+                margin-left: $size;
+            }
+        }
+    }
+}

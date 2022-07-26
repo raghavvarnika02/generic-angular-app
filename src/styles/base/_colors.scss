@@ -1,0 +1,106 @@
+@import "variables";
+
+// colors
+.#{$prefix}black {
+	color: $black;
+}
+.#{$prefix}grey {
+	color: $grey;
+}
+.#{$prefix}grey-light-1 {
+	color: $grey-light-1;
+}
+.#{$prefix}grey-shade-1 {
+	color: $grey-shade-1;
+}
+.#{$prefix}cyan {
+	color: $cyan;
+}
+.#{$prefix}green {
+	color: $green;
+}
+.#{$prefix}orange {
+	color: $orange;
+}
+.#{$prefix}red {
+	color: $red;
+}
+
+
+// background colors
+.#{$prefix}bg-white {
+    background-color: white;
+}
+.#{$prefix}bg-grey-light-3 {
+	background-color: $grey-light-3;
+}
+.#{$prefix}bg-grey-light-2 {
+	background-color: $grey-light-2;
+}
+.#{$prefix}bg-red-light-2 {
+	background-color: $red-light-2;
+}
+.#{$prefix}bg-yellow-light-2 {
+	background-color: $yellow-light-2;
+}
+.#{$prefix}bg-green-light-2 {
+	background-color: $green-light-2;
+}
+
+// special background colors
+.#{$prefix}bg-white-transparent {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+// pseudo before colors
+.#{$prefix}pseudo-before-bg-cyan {
+	&:before {
+		background-color: $cyan;
+	}
+}
+.#{$prefix}pseudo-before-bg-green {
+	&:before {
+		background-color: $green;
+	}
+}
+.#{$prefix}pseudo-before-bg-yellow {
+	&:before {
+		background-color: $yellow;
+	}
+}
+.#{$prefix}pseudo-before-bg-grey {
+	&:before {
+		background-color: $grey;
+	}
+}
+
+// border colors
+.#{$prefix}border-yellow {
+	border-color: $yellow;
+}
+.#{$prefix}border-red {
+	border-color: $red;
+}
+.#{$prefix}border-grey-light-2 {
+    border-color: $grey-light-2;
+}
+.#{$prefix}border-green {
+	border-color: $green;
+}
+
+// icon colors
+.#{$prefix}icon-cyan svg {
+	fill: $cyan;
+}
+.#{$prefix}icon-yellow svg {
+	fill: $yellow;
+}
+.#{$prefix}icon-red svg {
+	fill: $red;
+}
+.#{$prefix}icon-grey-light-1 svg {
+	fill: $grey-light-1;
+}
+.#{$prefix}icon-green svg {
+	fill: $icon-green
+}

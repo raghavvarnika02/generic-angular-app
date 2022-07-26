@@ -1,0 +1,21 @@
+@import "../base/variables";
+
+@each $name, $width in $breakpoints {
+	$breakpoint-prefix: '-' + $name;
+
+	@if $name == xs {
+		$breakpoint-prefix: '';
+	}
+
+	@media (min-width: #{$width}) {
+		.#{$prefix}display#{$breakpoint-prefix}-block {
+			display: block;
+		}
+		.#{$prefix}display#{$breakpoint-prefix}-flex {
+			display: flex;
+		}
+		.#{$prefix}display#{$breakpoint-prefix}-none {
+			display: none;
+		}
+	}
+}

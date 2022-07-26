@@ -1,0 +1,96 @@
+@import "variables";
+
+.#{$prefix}width-100 {
+    width: 100%;
+}
+
+.#{$prefix}height-100 {
+    height: 100%;
+}
+
+.#{$prefix}max-height-100 {
+	max-height: 100%;
+}
+
+.#{$prefix}width-350px {
+    width: 350px;
+}
+
+.#{$prefix}width-max-content {
+    width: max-content;
+}
+
+.#{$prefix}width-500px {
+	width: 500px;
+}
+
+.#{$prefix}width-675px {
+	width: 675px;
+}
+
+.#{$prefix}max-width-360px {
+	width: 360px;
+}
+
+.#{$prefix}max-width-80px {
+	max-width: 80px;
+}
+
+.#{$prefix}max-width-500px {
+	width: 500px;
+}
+
+.#{$prefix}size-sm {
+	width: 1rem;
+	height: 1rem;
+}
+
+.#{$prefix}size-md {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.#{$prefix}size-lg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.#{$prefix}size-xl {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+// Icon sizes
+.#{$prefix}icon-size-sm {
+	width: 1rem;
+	height: 1rem;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.#{$prefix}icon-size-md {
+	width: 1.25rem;
+	height: 1.25rem;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.#{$prefix}icon-size-lg {
+	width: 2rem;
+	height: 2rem;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.#{$prefix}overflow-y-auto {
+	overflow-y: auto;
+}
