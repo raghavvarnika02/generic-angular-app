@@ -1,0 +1,22 @@
+@import '/src/styles/base/variables';
+
+.#{$prefix}c-dialog {
+    border-radius: $border-radius-small;
+    max-width: 95%;
+}
+
+.#{$prefix}page-cover {
+    border-color: rgba(70, 70, 70, 0.7);
+}
+
+.#{$prefix}pointer-events-all {
+    pointer-events: all;
+}
+
+.#{$prefix}pointer-events-none {
+    pointer-events: none;
+}
+
+.#{$prefix}cursor-pointer {
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+
+<div class="vh-height-100 flex overflow-hidden">
+  <div class="vh-bg-grey-light-3 flex-auto overflow-auto">
+    <div class="vh-p-8">
+        <button (click)="opentoggle()">click me</button>
+        <div class="vh-bottom-sheet-container" [@slideUpDown]="openBottom? 'up' : 'down'">
+        </div>
+    </div>
+  </div>
+</div>

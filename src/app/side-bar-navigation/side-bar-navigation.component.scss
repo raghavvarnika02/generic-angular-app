@@ -1,0 +1,48 @@
+@import "../../styles/base/variables/";
+
+.#{$prefix}c-side-navigation-wrapper  {
+	width: 256px;
+
+	&.#{$prefix}c-collapsed {
+		width: 0;
+	}
+}
+
+.#{$prefix}c-width-48 {
+	width: 48px;
+}
+
+.#{$prefix}c-side-navigation-button {
+	height: 32px;
+
+	&:hover {
+		background-color: $grey-light-2;
+	}
+}
+
+.#{$prefix}c-icon-wrapper {
+	&:before {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background-color: transparent;
+	}
+
+	&.#{$prefix}c-icon-wrapper--cyan {
+		&:before {
+			background-color: $cyan;
+		}
+	}
+}
+
+.#{$prefix}mt-auto {
+	margin-top: auto;
+}
+
+@media (min-width: $small) {
+	.#{$prefix}c-side-navigation-wrapper  {
+		&.#{$prefix}c-collapsed {
+			width: 48px;
+		}
+	}
+}

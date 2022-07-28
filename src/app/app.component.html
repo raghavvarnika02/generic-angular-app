@@ -1,1 +1,16 @@
-<router-outlet></router-outlet>
+<div class="vh-height-100 flex flex-column">
+    <app-header></app-header>
+    <div class="vh-width-100 flex-auto flex relative">
+        <!-- <app-side-bar-navigation class="vh-c-side-navigation-bar vh-height-100 vh-z-index-1 absolute"></app-side-bar-navigation> -->
+        <div class="vh-c-main-content-wrapper vh-z-index-0 flex-auto relative overflow-hidden">
+            <div class="vh-height-100 overflow-auto">
+                <div class="vh-width-100 vh-height-100 relative flex">
+                    <h2>Varnika</h2>
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

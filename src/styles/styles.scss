@@ -7,9 +7,26 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: "Proxima Nova T Regular";
+    src: url("../assets/fonts/ProximaNova-Regular.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Proxima Nova T Semibold";
+    src: url("../assets/fonts/Proxima\ Nova\ Alt\ Bold.otf");
+    font-weight: 600;
+}
+
 //base
 @import "base/colors";
 @import "base/dimentions";
 @import "base/display";
 @import "base/spacing";
 @import "base/variables";
+@import "base/z-index";
+@import "base/typography";
+
+//bassCss
+@import "~basscss/css/basscss.css";
